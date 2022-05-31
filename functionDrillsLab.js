@@ -91,8 +91,8 @@ function add(num, num2) {
   return num + num2
 }
 
-let sum = add(12, 24)
-
+let sum = add(7, 13)
+console.log(sum)
 ////////////////// PROBLEM 7 ////////////////////
 
 /*
@@ -121,7 +121,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// console.log('arrow')
+console.log('arrow')
 // console.log('declaration')
 // console.log('expression')
 
@@ -131,7 +131,7 @@ const exclaimTwo = str => {
 
   Brownie points if you use a template string
 */
-
+const exclaimThree = str => `${str.toUpperCase()}!!!`
 
 
 ////////////////// PROBLEM 9 ////////////////////
@@ -146,7 +146,7 @@ function exclaimFour(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+console.log('declaration')
 // console.log('expression')
 
 
@@ -160,7 +160,17 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
-
+function nameCheck(name) {
+  if (name === "Steven"){
+    return "What is up Steven?"
+  } else if (name === "Bryan"){
+    return "Hey Bryan!"
+  } else {
+    return `Cool name, ${name}`
+  }
+}
+let nameGreeting = nameCheck('Nate')
+console.log(nameGreeting)
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -173,7 +183,19 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
-
+function faveColorFinder(color){
+  if (color === "red") {
+    return "red is a great color"
+  } else if (color === "green") {
+    return "green is a solid favorite color"
+  } else if (color === "black") {
+    return "so trendy"
+  } else {
+    return "you need to evaluate your favorite color choice"
+  }
+}
+let colorRating = faveColorFinder('blue')
+console.log(colorRating)
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
@@ -184,7 +206,12 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
-
+function printAllNames(names) {
+  for (let i = 0; i < names.length; i++){
+    console.log(names[i])
+  }
+}
+printAllNames(namesArr)
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
@@ -195,7 +222,15 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
-
+function thatsOdd(num) {
+  if (num % 2 === 0) {
+    return "That's not odd!"
+  } else {
+    return "That is odd indeed!"
+  }
+}
+let oddChecker = thatsOdd(5)
+console.log(oddChecker)
 
 ////////////////// PROBLEM 14 ////////////////////
 
@@ -208,7 +243,7 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
-
+const bestMovie = title => {return title + 'is the best movie ever!'}
 
 ////////////////// PROBLEM 15 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
@@ -222,7 +257,18 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 */
 
 //CODE HERE
-
+function bigOrSmall(arr) {
+  let answers = []
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 100) {
+      answers.push("big")
+    } else {
+      answers.push("small")
+    }
+  }
+  return answers
+}
+let arrayEvaluator = bigOrSmall (bigOrSmallArray)
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
