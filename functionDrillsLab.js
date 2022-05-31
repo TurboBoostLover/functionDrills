@@ -357,18 +357,18 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 */
 
 //CODE HERE
-function ArrayCheck(arr) {
-  let comparisonValue = arr[0]
-  for (let v = 1; v < arr.length - 1; v++) {
-    if (arr[v] <= comparisonValue) {
+function Blah(arr) {
+  let ohwell = arr[0]
+  for (let i = 1; i < arr.length - 1; i++) {
+    if (arr[i] <= ohwell) {
       return false
     } else {
-      comparisonValue = arr[v]
+      ohwell >= arr[i]
     }
   }
   return true
 }
-let arrayIsAscending = ArrayCheck (sampleArray)
+let arrayIsAscending = Blah (sampleArray)
 console.log(arrayIsAscending)
 ////////////////// PROBLEM 22 ////////////////////
 
